@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Leapyear 
+{
+public static void main(String[] args)
+{
+try
+{
+int date;
+System.out.println("Enter date: ");
+Scanner n1= new Scanner(System.in);
+date = n1.nextInt();
+int month;
+System.out.print("Enter month: ");
+Scanner n2 = new Scanner(System.in);
+month = n2.nextInt();
+int year;
+System.out.print("Enter an Year: ");
+Scanner n3 = new Scanner(System.in);
+year = n3.nextInt();
+System.out.print("The entered date is:"+date+"/"+month+"/"+year);
+if((date<=31)&& (date>0) && (month<=12))
+{
+if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0))
+System.out.println("Given is leap year");
+else
+System.out.println("Given is non-leap year");
+}
+else
+{
+System.out.println("enter valid date");
+}
+}
+catch(Exception e)
+{
+System.out.println("enter valid data");
+}
+}
+}
