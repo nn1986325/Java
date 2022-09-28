@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.Scanner;
+public class Numberpyramid
+{
+public static void main(String args[])
+{
+int i,j;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the number to be printed:");
+int k=sc.nextInt();
+System.out.println("max number of time printed");
+int n=sc.nextInt();
+for(i=1;i<=n;i++)
+{
+for(j=1;j<i;j++)
+{
+System.out.print(k+"");
+}
+System.out.println();
+}
+for(i=0;i<=n;i++)
+{
+for(j=n;j>i;j--)
+{
+System.out.print(k+"");
+}
+System.out.println();
+}
+}
+}
